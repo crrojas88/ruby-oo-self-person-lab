@@ -35,11 +35,12 @@ def hygiene=(dirt)
 end
 
 def clean?
-    if @hygiene > 7
-        true
-    else
-        false
-    end
+    @hygiene > 7 ? true : false
+#     if @hygiene > 7
+#         true
+#     else
+#         false
+#     end
 end
 
 def happy?
